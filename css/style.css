@@ -1702,7 +1702,7 @@ section:nth-of-type(7).background{
 
 #gerelateerde-verhalen.slide article{
    transition: transform 3s;
-   transform: translate(0, 0);
+   transform: unset;
 }
 
 
@@ -1800,6 +1800,13 @@ section:nth-of-type(7).background{
 }
 
 @media screen and (max-width: 28.6875em /*== 459px == */){
+
+   .container{
+      padding: 1rem;
+   }
+   form#rating{
+      width: 20rem;
+   }
 
    dialog.active .download{
       background-size: 70vw;
