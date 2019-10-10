@@ -1797,9 +1797,17 @@ section:nth-of-type(7).background{
       height: 65%;
       font-size: 3rem;
    }
+   .verhaal{
+      margin: 0 auto 0;
+   }
+   .scene{
+      transform: scale(1.6);
+   }
 }
 
 @media screen and (max-width: 28.6875em /*== 459px == */){
+
+   
 
    .container{
       padding: 1rem;
