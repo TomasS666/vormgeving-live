@@ -221,6 +221,7 @@
          count++;
 
          if(count == 1){
+            scene.classList.remove("background")
             control.textContent = '^'
             cube.classList.remove("right")
             cube.classList.add("left")
