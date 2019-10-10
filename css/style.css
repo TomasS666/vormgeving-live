@@ -417,6 +417,14 @@ dialog.active{
    animation-fill-mode: forwards;
 }
 
+dialog.active h2{
+   margin: -1rem;
+   padding: 2rem;
+   background-color: var(--green);
+   box-shadow: inset 0px -4px 9px grey;
+   color: var(--white);
+}
+
 dialog.close{
    animation: close 1s;
    /* animation-delay: 1s; */
