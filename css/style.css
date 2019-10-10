@@ -1501,6 +1501,28 @@ section:nth-of-type(7).background{
    animation-iteration-count: infinite;
 }
 
+.control.end::after{
+   content: 'The End';
+   animation-delay: 5s;
+   animation-name: end;
+   animation-duration: 3s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes end{
+   0%{
+      content: 'The End';
+   }
+
+   50%{
+      content: 'The End';
+   }
+
+   100%{
+      content: 'Play again';
+   }
+}
+
 @keyframes on-of{
    0%{
       opacity: 1;
@@ -1779,6 +1801,9 @@ section:nth-of-type(7).background{
 }
 
 @media screen and (max-width: 41.625em /*== 666px == */){
+   .controls{
+      width: unset;
+   }
    dialog{
       transform-origin: 30% 100%;
    }
@@ -1801,7 +1826,7 @@ section:nth-of-type(7).background{
       margin: 0 auto 0;
    }
    .scene{
-      transform: scale(1.6);
+      transform: scale(1.5);
    }
 }
 
@@ -1809,7 +1834,7 @@ section:nth-of-type(7).background{
 
    
 
-   .container{
+   section.container{
       padding: 1rem;
    }
    form#rating{
@@ -1854,7 +1879,9 @@ section:nth-of-type(7).background{
 }
 
 @media screen and (max-width: 24.4375em /*== 391px == */){
-
+   section.container{
+      padding: 1rem;
+   }
 
    dialog.active .download{
       background-size: 70vw;
@@ -1890,6 +1917,10 @@ section:nth-of-type(7).background{
 @media screen and (max-width: 17.6875em){
    h1{
       word-break: break-all;
+   }
+
+   section.container{
+      padding: .5rem;
    }
 
   

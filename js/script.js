@@ -221,6 +221,7 @@
          count++;
 
          if(count == 1){
+            control.classList.remove("end");
             scene.classList.remove("background")
             control.textContent = '^'
             cube.classList.remove("right")
@@ -231,7 +232,8 @@
             cube.classList.add("top")
          }else{
             count = 0;
-            control.textContent = 'The end'
+            control.textContent = '';
+            control.classList.add("end");
             cube.classList.remove("top");
             scene.classList.add("background")
          }
