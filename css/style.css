@@ -199,7 +199,7 @@ nav ul li .counter{
    display: flex;
    animation: attention 2s;
    animation-timing-function: ease-in-out;
-   animation-iteration-count: 2;
+   animation-iteration-count: infinite;
 }
 
 @keyframes attention{
@@ -418,11 +418,11 @@ dialog.active{
 }
 
 dialog.active h2{
-   margin: -1rem;
-   padding: 2rem;
-   background-color: var(--green);
-   box-shadow: inset 0px -4px 9px grey;
-   color: var(--white);
+       margin: -1rem;
+    padding: 2rem;
+    background-color: var(--green);
+    box-shadow: inset 0px -4px 9px grey;
+    color: var(--white);
 }
 
 dialog.close{
@@ -521,7 +521,7 @@ form#rating{
    width: 25rem;
    flex-flow: row-reverse;
    position: relative;
-   margin-top: 3rem;
+   margin-top: 0rem;
 }
 
 input[type="radio"].star:focus{
@@ -778,6 +778,7 @@ body > footer nav:nth-of-type(1) > ul li a {
    align-items: center;
    padding: 0 0 .3rem;
    text-decoration: none;
+   color: var(--green);
 }
 
 body > footer nav:nth-of-type(1) > ul li:nth-of-type(2) a {
@@ -849,6 +850,43 @@ section.container{
    padding: 4rem;
    max-width: unset;
    box-shadow: 0 -8px 15px 5px hsla(0, 0%, 25%, 0.30196078431372547);
+}
+
+section.back {
+   background-color: var(--green);
+   margin: 0;
+   max-width: unset;
+   height: 7rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 6rem;
+}
+
+section.back h4{
+   color: var(--white);
+   font-size: 1.5rem;
+}
+
+section.back a{
+ 
+   text-decoration: none;
+   padding: 0 2em;
+    /* min-height: unset; */
+    background-color: var(--blue);
+    margin-right: .5rem;
+    min-height: 2.5rem;
+    font-weight: bold;
+
+    padding: 0 2em;
+    order: none;
+    border-radius: 2rem;
+    padding: .5rem 2em;
+    min-height: 2.5rem;
+    color: var(--white);
+    font-family: "Nexa", "open-sans";
+
 }
 
 section:nth-of-type(n + 3){
@@ -1840,6 +1878,20 @@ section:nth-of-type(7).background{
 
 @media screen and (max-width: 28.6875em /*== 459px == */){
 
+   section.back{
+      padding: 3rem 1rem;
+      height: 10rem;
+   }
+
+   section.back h4{
+      font-size: 1.3rem;
+      text-align: center;
+   }
+
+   section.back a{
+      margin-top: -2.9rem;
+   }
+   
    
 
    section.container{

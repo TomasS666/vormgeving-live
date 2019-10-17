@@ -315,5 +315,13 @@
 
    }
 
+   // if(document.querySelector(".back-home")){
+   //    var backhome = document.querySelector(".back-home");
+
+   //    backhome.addEventListener("click", function(e){
+   //       window.location.href = 'file:///D:/stolp/Documents/School/Jaar%203/Herkansingsvakken/Vormgeving/live/western.html/';
+   //    })
+   // }
+
 
 // }
